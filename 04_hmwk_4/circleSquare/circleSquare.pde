@@ -14,8 +14,8 @@ void setup(){
 
 void draw(){
   println(frameCount);
-  float x = r * cos(frameCount*speed);
-  float y = r * sin(frameCount*speed);
+  float x = r * cos(frameCount/speed);
+  float y = r / sin(frameCount*speed);
   fill(255, 255, 0);
   ellipse(x+width/2, y+height/2, 20, 20);
   theta += 0.5;
